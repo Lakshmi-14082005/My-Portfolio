@@ -21,7 +21,7 @@ const Contact = () => {
 
             <div className="contact-layout">
 
-                <div className="contact-info-cards">
+                <div className="contact-info-cards ">
                     <a href="mailto:thotalakshmiprasanna1408@gmail.com" className="connect-card">
                         <div className="connect-icon">✉️</div>
                         <h3>Email</h3>
