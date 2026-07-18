@@ -1,17 +1,41 @@
-# React + Vite
+# Portfolio - Lakshmi Prasanna Thota
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional personal portfolio website showcasing my journey as a FullStack Web Developer and Computer Science student. Built with **React**, **Vite**, and **Tailwind CSS**, this platform highlights my technical skills, projects, and professional background.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
+- 🌐 **Responsive Navigation:** Smooth-scrolling sections (Home, About, Projects, Skills, Contact).
+- 💻 **Project Showcase:** Interactive grid displaying my work with direct links.
+- 🎨 **Modern UI/UX:** Clean, mobile-first design styled with Tailwind CSS.
+- 📄 **Resume Integration:** Quick access to my professional credentials.
+- 🚀 **Performance:** Fast loading with Vite and React.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo & Repository
+- **[View Live Portfolio](https://lakshmi-14082005.github.io/portfolio/)**
+- **[GitHub Repository](https://github.com/Lakshmi-14082005/portfolio)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Portfolio
+## 🛠 Technologies Used
+- **Frontend:** React, Vite, Tailwind CSS
+- **Languages:** JavaScript (ES6+), HTML5, CSS3
+- **Tools:** Git, GitHub, VS Code
+
+---
+
+## 🤝 Contact Information
+Feel free to reach out for collaborations or opportunities:
+- **Email:** [your-email@example.com](mailto:your-email@example.com)
+- **LinkedIn:** [Lakshmi Prasanna Thota](https://linkedin.com/in/lakshmi-prasanna-thota-88a28740b)
+
+---
+
+## 🎥 Preview
+[Watch the preview](https://github.com/user-attachments/assets/YOUR-VIDEO-LINK-HERE)
+
+---
+📜 License
+This project is licensed under the MIT License.
