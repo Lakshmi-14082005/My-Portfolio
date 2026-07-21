@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header.jsx'
 
@@ -11,18 +11,18 @@ import Contact from './pages/Contact.jsx'
 
 const App = () => {
   return (
-   <HashRouter>
-  <Header />
-  <Routes>
-    <Route path='/' element={<Home />} />
-    <Route path='/about' element={<About />} />
-    <Route path='/projects' element={<Projects />} />
-    <Route path='/Skills' element={<Skills />} />
-    <Route path='/contact' element={<Contact />} />
-  </Routes>
-</HashRouter>
+    <HashRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/Skills' element={<Skills />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+    </HashRouter>
 
-    </Router>
+
   )
 }
 
