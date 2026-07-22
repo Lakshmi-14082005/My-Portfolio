@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .home-container {
     display: flex;
     align-items: center;
@@ -18,10 +12,19 @@
 }
 
 .portfolio-img img {
-    border: 20px solid blue;
+    height: 520px;
+    width: 520px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 6px solid blue;
+
 }
 
 .introduction {
+    font-size: larger;
+    font-style: italic;
+    line-height: 2;
     text-align: center;
     margin-right: 20px;
     padding: 20px;
@@ -34,4 +37,5 @@
 
 .profile-links a {
     margin-top: 20px;
+
 }

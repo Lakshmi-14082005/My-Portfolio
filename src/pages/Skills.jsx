@@ -13,7 +13,7 @@ const Skills = () => {
         },
         {
             title: "Professional Skills",
-            skills: ["Communication", "Leadership", "Proble-Solving"]
+            skills: ["Communication", "Leadership", "Problem-Solving"]
         }
     ];
 
