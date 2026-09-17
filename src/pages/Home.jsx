@@ -1,42 +1,68 @@
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import profile from '../assets/profile.jpeg'
-import './home.css'
+import { Link } from 'react-router-dom';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import profile from '../assets/profile.jpeg';
+import resume from '../assets/Resume.pdf';
+import './home.css';
+
 const Home = () => {
     return (
-        <div className='home-container'>
+        <div className="home-container">
             <div className="portfolio-img">
-                <img className="portfolio" src={profile} alt="profile-img" />
+                <img className="portfolio" src={profile} alt="Lakshmi Prasanna Thota" />
             </div>
             <div className="introduction">
-                <h2 className="text-3xl ...">Hello, It's Me</h2>
-                <h1 className="text-6xl ...">Lakshmi Prasanna Thota</h1>
-                <h2 className="text-3xl ...">And I'm a FullStack Web Developer | CSE Student at  <br />Mother Teresa Institute of Science and Technology </h2>
-                <p className="text-xl ...">who builds clean, scalable, and user-first web applications.</p>
-                <p className="text-xl ..."> From designing responsive front-ends to structuring robust back-ends,<br /> I bring ideas to life with code.</p>
-                <div className="profile-links flex gap-10 mt-6 justify-center md:center">
+                <p className="text-xl text-blue-300 font-semibold mb-1">Hello, It's Me</p>
+                <h1>Lakshmi Prasanna Thota</h1>
+                <h2>
+                    FullStack Web Developer &bull; CSE Student at <br />
+                    Mother Teresa Institute of Science and Technology
+                </h2>
+                <p>
+                    Passionate about building clean, scalable, and user-first web applications.
+                    From designing responsive front-ends with React and Tailwind to structuring reliable codebases, I bring ideas to life with code.
+                </p>
+
+                <div className="home-cta">
+                    <Link to="/projects" className="cta-btn-primary">
+                        🚀 Explore Projects & Demos
+                    </Link>
+                    <a href={resume} download="Lakshmi_Prasanna_Resume.pdf" className="cta-btn-secondary">
+                        📄 Download Resume
+                    </a>
+                    <Link to="/contact" className="cta-btn-secondary">
+                        💬 Contact Me
+                    </Link>
+                </div>
+
+                <div className="profile-links">
                     <a
                         href="https://linkedin.com/in/lakshmi-prasanna-thota-88a28740b"
                         target="_blank"
-                        rel="noreferrer"
-                        className="mt-10 text-white hover:text-sky-400 transition-colors duration-300"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile"
                     >
-                        <FaLinkedin size={32} />
+                        <FaLinkedin size={26} />
                     </a>
 
                     <a
                         href="https://github.com/Lakshmi-14082005"
                         target="_blank"
-                        rel="noreferrer"
-                        className=" mt-10 text-white hover:text-gray-400 transition-colors duration-300"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub Profile"
                     >
-                        <FaGithub size={32} />
+                        <FaGithub size={26} />
+                    </a>
+
+                    <a
+                        href="mailto:thotalakshmiprasanna1408@gmail.com"
+                        aria-label="Email Lakshmi Prasanna"
+                    >
+                        <FaEnvelope size={24} />
                     </a>
                 </div>
-
-
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

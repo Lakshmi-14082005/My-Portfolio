@@ -3,6 +3,7 @@ import './contact.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -10,37 +11,67 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thank you for reaching out! I'll get back to you soon.");
+        setIsSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 6000);
     };
 
     return (
         <div className="contact-container">
             <h2 className="text-5xl contact-heading">Contact Me</h2>
-            <p className="contact-subtitle">Let's connect! Feel free to reach out for opportunities or just a tech chat.</p>
+            <p className="contact-subtitle">Let's connect! Feel free to reach out for opportunities, collaborations, or tech discussions.</p>
 
             <div className="contact-layout">
 
-                <div className="contact-info-cards ">
+                <div className="contact-info-cards">
                     <a href="mailto:thotalakshmiprasanna1408@gmail.com" className="connect-card">
                         <div className="connect-icon">✉️</div>
-                        <h3>Email</h3>
-                        <p>thotalakshmiprasanna1408@gmail.com</p>
+                        <div>
+                            <h3>Personal Email</h3>
+                            <p>thotalakshmiprasanna1408@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:lakshmiprasanna571@mist.edu.in" className="connect-card">
+                        <div className="connect-icon">🎓</div>
+                        <div>
+                            <h3>Academic Email</h3>
+                            <p>lakshmiprasanna571@mist.edu.in</p>
+                        </div>
                     </a>
 
                     <a href="https://linkedin.com/in/lakshmi-prasanna-thota-88a28740b" target="_blank" rel="noopener noreferrer" className="connect-card">
                         <div className="connect-icon">💼</div>
-                        <h3>LinkedIn</h3>
-                        <p>linkedin.com/in/lakshmi-prasanna-thota-88a28740b</p>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/lakshmi-prasanna-thota-88a28740b</p>
+                        </div>
                     </a>
 
                     <a href="https://github.com/Lakshmi-14082005" target="_blank" rel="noopener noreferrer" className="connect-card">
                         <div className="connect-icon">🐙</div>
-                        <h3>GitHub</h3>
-                        <p>github.com/Lakshmi-14082005</p>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/Lakshmi-14082005</p>
+                        </div>
+                    </a>
+
+                    <a href="https://lakshmi-14082005.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer" className="connect-card">
+                        <div className="connect-icon">🌐</div>
+                        <div>
+                            <h3>Live Portfolio</h3>
+                            <p>lakshmi-14082005.github.io/My-Portfolio</p>
+                        </div>
                     </a>
                 </div>
+
                 <form className="contact-form" onSubmit={handleSubmit}>
+                    {isSubmitted && (
+                        <div className="success-banner">
+                            <span>✅</span>
+                            <span>Thank you for reaching out! Your message has been received and I'll get back to you soon.</span>
+                        </div>
+                    )}
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input
