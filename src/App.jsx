@@ -1,7 +1,7 @@
-import React from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header.jsx'
+import './App.css'
 
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
@@ -17,12 +17,12 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/skills' element={<Skills />} />
         <Route path='/Skills' element={<Skills />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
     </HashRouter>
-
-
   )
 }
 

@@ -1,9 +1,7 @@
-import React from 'react'
 import './projects.css'
 import Noto from '../assets/NoTo-Website.mp4';
 import college from '../assets/College.mp4';
 import ToDo from '../assets/Student-ToDo List.mp4';
-import Calculator from '../assets/Calculator.mp4';
 
 const Projects = () => {
     return (
@@ -122,14 +120,12 @@ const Projects = () => {
                 </div>
                 {/* Project 4 */}
                 <div className="project-card">
-                    <div className="project-image">
-                        <video
-                            src={Calculator}
-                            muted
-                            autoPlay
-                            loop
-                            playsInline
-                        />
+                    <div className="project-image flex items-center justify-center bg-slate-900 text-white">
+                        <div className="text-center p-6 flex flex-col items-center justify-center h-full">
+                            <span className="text-5xl mb-2">🧮</span>
+                            <span className="text-xl font-bold text-white tracking-wide">Calculator App</span>
+                            <span className="text-sm text-slate-300 mt-1">React Components & State Management</span>
+                        </div>
                     </div>
                     <div className="project-info">
                         <h3>Calculator</h3>

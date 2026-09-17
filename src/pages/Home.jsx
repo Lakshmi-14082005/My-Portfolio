@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import profile from '../assets/profile.jpeg'
 import './home.css'
